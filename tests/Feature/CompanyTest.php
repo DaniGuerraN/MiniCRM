@@ -44,7 +44,7 @@ class CompanyTest extends TestCase
 
         $company = Company::factory(1)->create();
 
-        $company = $company[0];
+        $company = Company::find(1);
 
 
         $data = [
@@ -90,7 +90,7 @@ class CompanyTest extends TestCase
 
         $company = Company::factory(1)->create();
 
-        $company = $company[0];
+        $company = Company::find(1);
 
         $data = [
             'name'=>$company["name"] . 2,

@@ -49,7 +49,7 @@ class EmployeeTest extends TestCase
 
         $employee = Employee::factory(1)->create();
 
-        $employee = $employee[0];
+        $employee = Employee::find(1);
 
 
         $data = [
